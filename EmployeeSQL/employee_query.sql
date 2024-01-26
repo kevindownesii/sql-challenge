@@ -23,11 +23,11 @@ CREATE TABLE dept_emp(
 CREATE TABLE employees(
 	emp_no INT PRIMARY KEY,
 	emp_title_id VARCHAR NOT NULL,
-	birth_date VARCHAR NOT NULL,
+	birth_date DATE NOT NULL,
 	first_name VARCHAR NOT NULL,
 	last_name VARCHAR NOT NULL,
 	sex VARCHAR NOT NULL,
-	hire_date VARCHAR NOT NULL,
+	hire_date DATE NOT NULL,
 	FOREIGN KEY (emp_title_id) REFERENCES titles(title_id)
 );
 
